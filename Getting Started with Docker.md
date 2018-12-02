@@ -1,5 +1,6 @@
 # Getting Started with Docker
 Docker provides a platform to develop, deploy, and run applications with containers.
+
 Key concepts covered 
   - What is a container?
   - How to launch a container?
