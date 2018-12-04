@@ -44,7 +44,7 @@ Even if you only need to run a single instance of your application, swarm servic
     </tr>
     <tr>
       <td style="text-align: left">Use Docker for Mac or Docker for Windows.</td>
-      <td style="text-align: left">Use Docker EE if possible, with <a href="/engine/security/userns-remap.md">userns mapping</a> for greater isolation of Docker processes from host processes.</td>
+      <td style="text-align: left">Use Docker EE if possible, with userns mapping for greater isolation of Docker processes from host processes.</td>
     </tr>
     <tr>
       <td style="text-align: left">Don’t worry about time drift.</td>
