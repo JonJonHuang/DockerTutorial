@@ -1,5 +1,5 @@
 # Docker Best Practice<br>
-This page introduces some best practices for developers to make the developing process easier and more effective. Both general docker development best practices and best practices for writing dockerfiles will be covered below. For detailed information, please visit https://docs.docker.com/develop/dev-best-practices/. <br>
+This page introduces some best practices for developers to make the developing process easier and more effective. For detailed information, please visit https://docs.docker.com/develop/dev-best-practices/. <br>
 
 
 ## Best practices for Docker Development <br>
