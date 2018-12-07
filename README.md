@@ -13,10 +13,11 @@ Docker is a open source software for operating system level virtualization (aka 
 ### Contents
 1. [Getting Started]
 2.
-3.
+3. [Launching and Sharing Your Docker App]
 4. [Docker Compose]
 5. [Best Practice]
 
 [Getting Started]: <https://github.com/JonJonHuang/DockerTutorial/blob/master/Getting%20Started%20with%20Docker.md>
 [Best Practice]: <https://github.com/JonJonHuang/DockerTutorial/blob/master/BestPractice.md>
 [Docker Compose]: <https://github.com/JonJonHuang/DockerTutorial/blob/master/Docker%20Compose.md>
+[Launching and Sharing Your Docker App]: <https://github.com/JonJonHuang/DockerTutorial/blob/master/Launching%20Your%20Docker%20App%20and%20Sharing.md>
