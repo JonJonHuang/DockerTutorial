@@ -1,7 +1,7 @@
 # Launching Your Docker App and Sharing
 
 ### Launching Your Docker App
-Once you have built your Docker app, you are then ready to run the app!  To run the app call the command
+Once you have built your Docker app, you are then ready to run the app!  To run the app call the command:
 
 ```sh
 docker run -p 4000:80 imageName
@@ -32,9 +32,9 @@ Docker is completley portable. You can upload the image that you have previously
 Log into the Docker public registry by running ```docker login```
 
 ##### Tagging the image
-The notation for associating a local image with a repository on a registry is ```username/repository:tag```. The tag is optional, but recommended, since it is the mechanism that registries use to give Docker images a version. Give the repository and tag meaningful names for the context, such as ```get-started:part2```. This puts the image in the ```get-started``` repository and tag it as ```part2```.
+To associate a local image with a repository on a registry call ```username/repository:tag```. The tag is optional, but recommended for versions in Docker. You should give the repository and tag meaningful names for the context, such as ```myRepository:part20```.
 
-Now, put it all together to tag the image. Run ```docker tag image``` with your username, repository, and tag names so that the image uploads to your desired destination. The syntax of the command is:
+To tag the image. Run ```docker tag image``` with your username, repository, and tag names. This ensures the image uploads to your desired destination. 
 
 ```
 docker tag image username/repository:tag
@@ -43,20 +43,20 @@ docker tag image username/repository:tag
 Run ```docker image ls``` to see your newly tagged image.
 
 ##### Publish the image
-Upload your tagged image to the repository:
+To upload your tagged image to your repository:
 
 ```
 docker push username/repository:tag
 ```
-Once complete, the results of this upload are publicly available. If you log in to Docker Hub, you see the new image there, with its pull command.
+Once uploaded, the results are publicly available. If you log into Docker Hub, the new image will be there along with its pull command.
 
 ##### Pull and run the image from the remote repository
-From now on, you can use docker run and run your app on any machine with this command:
+You can use ```docker run``` to run your app on any machine:
 ```
 docker run -p 4000:80 username/repository:tag
 ```
-If the image isn’t available locally on the machine, Docker pulls it from the repository.
+Docker pulls the image from the repository if it isn't already available locally.
 
-No matter where ```docker run``` executes, it pulls your image, along with Python and all the dependencies from ```requirements.txt```, and runs your code. It all travels together in a neat little package, and you don’t need to install anything on the host machine for Docker to run it.
+Wherever ```docker run``` executes, your image and its dependencies from ```requirements.txt``` are pulled, and then your code is run. Everything travels together in one package, and nothing needs to be installed  on the host machine for Docker to run it.
 
 That's it for running and sharing your Docker app! Full documentation for running and sharing your Docker app can be found on Docker's [website](https://docs.docker.com/get-started/part2/#run-the-app).
